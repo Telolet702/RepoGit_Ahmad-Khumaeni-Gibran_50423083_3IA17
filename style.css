@@ -1,0 +1,117 @@
+body {
+    font-family: 'Courier New', Courier, monospace; /* Font ala koding */
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+.container {
+    background: #1e1e1e;
+    padding: 30px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.1); /* Glow hijau tipis */
+    width: 400px;
+}
+
+h2 { text-align: center; color: #00ff41; text-transform: uppercase; letter-spacing: 2px; }
+
+/* Form Input */
+.input-group { display: flex; gap: 10px; margin-bottom: 20px; }
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    background: #2d2d2d;
+    border: 1px solid #444;
+    color: #fff;
+    outline: none;
+}
+
+button.add-btn {
+    padding: 10px 20px;
+    background-color: #00ff41;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.add-btn:hover { box-shadow: 0 0 10px #00ff41; }
+
+/* List */
+ul { list-style: none; padding: 0; }
+li {
+    background: #252526;
+    border-left: 3px solid #00ff41;
+    margin-bottom: 8px;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Tombol Aksi */
+.actions a {
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    margin-left: 5px;
+    color: #fff;
+    border-radius: 3px;
+}
+.btn-done { background-color: #007acc; }
+.btn-del { background-color: #d11; }
+
+.task-done { text-decoration: line-through; color: #555; }
+
+/* --- Tambahan untuk Login & Register --- */
+.auth-container {
+    width: 300px;
+    margin-top: 100px;
+    text-align: center;
+}
+.auth-container input {
+    width: 90%;
+    margin-bottom: 15px;
+}
+.auth-container button {
+    width: 100%;
+}
+.link-auth {
+    display: block;
+    margin-top: 15px;
+    color: #00ff41;
+    font-size: 12px;
+}
+
+/* Header User di Index */
+.user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #00ff41;
+    padding-bottom: 10px;
+}
+.btn-logout {
+    background: transparent;
+    color: #555;
+    border: 1px solid #555;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.btn-logout:hover { border-color: #ff0055; color: #ff0055; }
+
+/* Tombol Edit */
+.btn-edit {
+    color: #ffa500 !important; /* Warna Oranye */
+    border: 1px solid #ffa500 !important;
+}
+.btn-edit:hover { background: #ffa500; color: #000; box-shadow: 0 0 10px #ffa500; }
