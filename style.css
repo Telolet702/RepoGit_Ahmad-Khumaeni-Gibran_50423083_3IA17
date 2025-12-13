@@ -85,3 +85,15 @@ li {
     background: white;
     border-radius: 10px;
 }
+
+.done {
+    text-decoration: line-through;
+    color: #bbb;
+}
+
+.btn-action {
+    margin-left: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
